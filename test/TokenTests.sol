@@ -53,7 +53,6 @@ contract OurTokenTest is Test {
         ourToken.transferFrom(bob, alice, transferAmount);
         assertEq(ourToken.balanceOf(alice), transferAmount);
         assertEq(ourToken.balanceOf(bob), BOB_STARTING_AMOUNT - transferAmount);
-        assertEq(ourToken.balanceOf(bob), BOB_STARTING_AMOUNT - transferAmount);
     }
 
     // can you get the coverage up?
